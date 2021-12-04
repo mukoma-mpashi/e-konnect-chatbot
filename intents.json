@@ -21,7 +21,7 @@
         },
         {"tag": "options",
          "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-         "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+         "responses": ["I can guide you through  your room search, tutor  tracking,  advertising spaces"],
          "context": [""]
         },
         {"tag": "  room ",
@@ -34,10 +34,10 @@
          "responses": [" am your e-konnect chatbot", " you can call me muko "," i was made by the great programmer muko coder muko"],
          "context": [""]
         },
-        {"tag": "blood_pressure_search",
-         "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
-         "responses": ["Please provide Patient ID", "Patient ID?"],
-         "context": ["search_blood_pressure_by_patient_id"]
+        {"tag": "payment_method",
+         "patterns": [" how do i pay ", "payment method", " do you accept card payment " ],
+         "responses": [" no unfortunatly we do not accept card payment ", " we dont accept payment directly  instead we connect you directly to the seller "," we dont accept payment directly , but we can link you to the sellers whats app"],
+         "context": [""]
         },
         {"tag": "search ",
          "patterns": [],
@@ -45,7 +45,7 @@
          "context": [""]
         },
         {"tag": "services",
-         "patterns": ["Find me  a tutor", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "patterns": ["Find me  a tutor", "Find me a course", "List of tutors", "Locate pharmacy", "Search tutors " ],
          "responses": ["Please provide   course of wanted tutor"],
          "context": ["  search_loading_available "]
         },
@@ -54,19 +54,15 @@
          "responses": ["Loading  ...... searching for avialable tutors"],
          "context": [""]
         },
-        {"tag": "hospital_search",
-         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
-         "responses": ["Please provide hospital name or location"],
-         "context": ["search_hospital_by_params"]
-        },
-        {"tag": "search_hospital_by_params",
+        
+        {"tag": "search",
          "patterns": [],
-         "responses": ["Please provide hospital type"],
-         "context": ["search_hospital_by_type"]
+         "responses": ["Please topic type"],
+         "context": ["search_topic_by_type"]
         },
-        {"tag": "search_hospital_by_type",
+        {"tag": " recent shoping",
          "patterns": [],
-         "responses": ["Loading hospital details"],
+         "responses": ["Loading recent shoping details...."],
          "context": [""]
         }
    ]
